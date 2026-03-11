@@ -8,6 +8,9 @@ on:
         required: true
         default: 'alpine:latest,alpine/curl,busybox:stable-glibc'
 
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true   # 直接使用 Node.js 24
+
 jobs:
   pull_and_package:
     runs-on: ubuntu-22.04
